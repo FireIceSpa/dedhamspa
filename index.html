@@ -65,6 +65,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-bet
 footer .social-row svg{width:18px;height:18px}
 .credit a{color:var(--muted);text-decoration:underline}
 .credit a:hover{color:var(--ember2)}
+.rating-badge{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--muted);font-family:system-ui,sans-serif;font-size:14px;margin-top:18px}
+.rating-badge:hover{color:var(--ember2)}
+.rating-badge b{color:var(--text)}
+.stars{position:relative;display:inline-block;font-size:18px;line-height:1;letter-spacing:2px}
+.stars-bg{color:#3a4a55}
+.stars-fg{position:absolute;top:0;left:0;white-space:nowrap;overflow:hidden;width:var(--pct);color:#ffb067}
 @media(max-width:640px){.call-link span{display:none}}
 @media(max-width:520px){.hide-sm{display:none}}
 </style>
@@ -82,7 +88,8 @@ footer .social-row svg{width:18px;height:18px}
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"22:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"22:00"}
   ],
-  "sameAs":["https://www.facebook.com/FireIceSpa","https://www.instagram.com/fireicespa/","https://www.youtube.com/@FireIceSpa","https://www.yelp.com/biz/fire-and-ice-cryotherapy-spa-dedham"]
+  "sameAs":["https://www.facebook.com/FireIceSpa","https://www.instagram.com/fireicespa/","https://www.youtube.com/@FireIceSpa","https://www.yelp.com/biz/fire-and-ice-cryotherapy-spa-dedham"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"126"}
 }
 </script>
 </head>
@@ -117,6 +124,10 @@ footer .social-row svg{width:18px;height:18px}
     <span class="eyebrow">Dedham, Massachusetts</span>
     <h1>Your own private <em>sauna</em> in Dedham.</h1>
     <p class="lead">Book a room just for you, your partner, or a few friends. Traditional, dry salt-panel and infrared saunas by the hour, plus massage.</p>
+    <a class="rating-badge" href="https://www.google.com/maps/place/?q=place_id:ChIJu58uXZZ_44kRKnfp3Age5Sc" target="_blank" rel="noopener" aria-label="Rated 4.7 out of 5 stars from 126 Google reviews">
+      <span class="stars" style="--pct:94%"><span class="stars-bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="stars-fg">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+      <span><b>4.7</b> &middot; 126 Google reviews</span>
+    </a>
     <div class="cta">
       <a class="btn" href="https://book.fireicespa.com">Book a session</a>
       <a class="btn ghost" href="https://store.fireicespa.com">Packages &amp; memberships</a>
